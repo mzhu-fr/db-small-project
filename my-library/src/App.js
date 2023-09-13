@@ -1,10 +1,9 @@
-import AppRouting from './routes';
+import './style/App.css';
 
 function App() {
   return (
-    <>
-      <AppRouting />
-    </>
+    <div className="App">
+    </div>
   );
 }
 
