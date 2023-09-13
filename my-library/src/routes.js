@@ -1,12 +1,10 @@
 import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
-import Navbar from './composants/navbar';
 
-export default function AppRouting() {
+export function webRouting() {
     return (
         <BrowserRouter>
-            <Navbar />
             <Routes>
-                <Route></Route>
+                <Route path="/" element={App}></Route>
             </Routes>
         </BrowserRouter>
     )
