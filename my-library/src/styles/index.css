@@ -5,11 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection {
+  background: var(--vert-fonce);
+  color: var(--citron);
 }
 
 :root {
@@ -29,6 +47,18 @@ code {
   --texte: #0f0a3c;
   --noir: #010101;
   --blanc: #faf9f9;
+  --rouge: #e04b5a;
 
   /* COULEUR OPACITE */
+  --vert-fonce-opacite: rgba(14, 149, 119, 0.5);
+  --vert-clair-opacite: rgba(4, 22, 173, 0.5);
+  --jaune-clair-opacite: rgba(241, 239, 185, 0.5);
+  --citron-opacite: rgba(251, 250, 225, 0.5);
+  --bleu-clair-opacite: rgba(189, 228, 244, 0.5);
+  --bleu-fonce-opacite: rgba(64, 73, 105, 0.5);
+  --texte-titre-opacite: rgba(35, 49, 66, 0.5);
+  --texte-opacite: rgba(15, 10, 60, 0.5);
+  --noir-opacite: rgba(1, 1, 1, 0.5);
+  --blanc-opacite: rgba(250, 249, 249, 0.5);
+  --rouge-opacite: rgba(224, 75, 90, 0.5);
 }
