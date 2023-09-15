@@ -1,0 +1,24 @@
+*{ margin: 0;padding: 0; }
+.pageProduct{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--vert-fonce);
+    padding: 5%;
+}
+.pageProduct h1{
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    margin-right: auto;margin-left: auto;
+}
+.containerProduct{
+    max-width: 900px;
+
+    height: 700px;
+    margin: 100px auto;
+    background-color: var(--bleu-clair);
+    border: 2px solid black; border-radius: 5px;
+    
+}
