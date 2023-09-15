@@ -1,6 +1,8 @@
-import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';//navlink enlever
 import Navbar from './composants/navbar';
-import Sidebar from './composants/sidebar';
+import Product from './pages/product';
+import Home from './pages/home';
+import Error from './pages/error';
 
 export default function AppRouting() {
     return (
@@ -8,7 +10,9 @@ export default function AppRouting() {
             <Navbar />
             <Sidebar />
             <Routes>
-                <Route></Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/product" element={<Product />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
