@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';//navlink enleve
 import Navbar from './composants/navbar';
 import Product from './pages/product';
 import Home from './pages/home';
-import Error from './pages/error'
+import Error from './pages/error';
 
 export default function AppRouting() {
     return (
