@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/product.css";
-import Card from "../component/card";
+import Card from "../composants/card";
 export default function product() {
   return (
     <>
@@ -14,9 +14,8 @@ export default function product() {
 
           {/* Grid product */}
           <div className="grid-container">
-            <Card /> <Card /> <Card /> <Card />
-            <Card /> <Card /> <Card /> <Card />
-            <Card /> <Card /> <Card /> <Card />
+            <Card /><Card /><Card /><Card />
+            <Card /><Card /><Card /><Card />
             </div>
         </div>
       </div>

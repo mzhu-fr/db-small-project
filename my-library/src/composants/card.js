@@ -7,7 +7,7 @@ export default function card() {
         <>
             <div className="grid-item">
                 <div className="card">
-                    <img className="avatar" src={Image} />
+                <img className="avatar" src={Image} />
                     <Book
                         cName="name"
                         text="Harry Potter"

@@ -7,6 +7,7 @@ export default function Navbar() {
         <>
             <navbar className="navbar-contenu">
                 <Link to="/">HOME</Link>
+                <Link to="/product">PRODUCT</Link>
                 <Link to=""></Link>
             </navbar>
         </>
