@@ -11,7 +11,8 @@
     text-align: center;
     width: 400px;
     height: 50px;
-    margin-right: auto;margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 .containerProduct{
     max-width: 1500px;

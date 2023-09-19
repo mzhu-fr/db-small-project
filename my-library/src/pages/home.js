@@ -1,7 +1,11 @@
 import React from 'react'
-
+import '../styles/home.css'
 export default function Home() {
   return (
-    <div>Home pageeeeeee</div>
+    <>
+    <div className='pageHome'>
+        <h1>La Librairie d'Angélique</h1>
+    </div>
+    </>
   )
 }
