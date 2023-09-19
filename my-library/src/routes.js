@@ -1,5 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';//navlink enlever
-import Navbar from './composants/navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Sidebar from './component/sidebar'
+import Navbar from './component/navbar';
 import Product from './pages/product';
 import Home from './pages/home';
 import Error from './pages/error';
