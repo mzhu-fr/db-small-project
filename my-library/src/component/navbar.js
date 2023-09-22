@@ -17,9 +17,9 @@ export default function Navbar() {
                 <Link to="/" className="logo-book"><GiWhiteBook /></Link>
                 <p className="logo-titre">MES LIVRES MOMO</p>
                 <div className="navbar-content">
-                    <Link className="navbar-links" to="">MES LIVRES</Link>
-                    <Link className="navbar-links" to="">Se connecter</Link>
-                    <Link className="navbar-links" to="">S'enregistrer</Link>
+                    <Link className="navbar-links" to="/product">MES LIVRES</Link>
+                    <Link className="navbar-links" to="/signin">Se connecter</Link>
+                    <Link className="navbar-links" to="/signup">S'enregistrer</Link>
                     <Link className="navbar-links" to=""></Link>
                 </div>
                 <div onClick={() => handleClick()} className="burger-menu"><GiHamburgerMenu /></div>

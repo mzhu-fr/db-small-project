@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/product.css";
-import Card from "../composants/card";
+import Card from "../component/card";
 export default function product() {
   return (
     <>
