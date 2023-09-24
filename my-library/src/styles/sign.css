@@ -5,6 +5,12 @@
     background-color: var(--bleu-fonce);
     padding-top: 200px;
 }
+.pageSignIn{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bleu-fonce);
+    padding-top: 200px;
+}
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -17,16 +23,13 @@
 h2 {
     text-align: center;
 }
-
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     margin-bottom: 8px;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -35,7 +38,6 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 button {
     padding: 10px;
     background-color: #007bff;
@@ -44,11 +46,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
 .error {
     color: red;
     margin-top: 5px;

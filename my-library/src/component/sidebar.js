@@ -16,10 +16,10 @@ export default function Sidebar() {
             <div className="sidebar-close"><ImCross onClick={() => handleClick()} /></div>
             <div className="sidebar-links-list">
                 <Link className="sidebar-link">sidebarLink</Link>
-                <Link className="sidebar-link">Link1</Link>
-                <Link className="sidebar-link">Link2</Link>
-                <Link className="sidebar-link">Link3</Link>
-                <Link className="sidebar-link">Link4</Link>
+                <Link className="sidebar-link" to="/product">Mes livres</Link>
+                <Link className="sidebar-link" to="/signin">Se connecter</Link>
+                <Link className="sidebar-link" to="/signup">S'enregistrer</Link>
+                <Link className="sidebar-link" to="/panier">Panier</Link>
             </div>
         </div>
     )

@@ -1,0 +1,32 @@
+*{ 
+  margin: 0;
+  padding: 0; 
+}
+.pagePanier{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--vert-fonce);
+    padding: 3%;
+}
+.contenuePanier {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contenue {
+  border: 1px solid red;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+.containerPanier {
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--bleu-clair);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+}

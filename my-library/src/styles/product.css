@@ -5,9 +5,9 @@
     background-color: var(--vert-fonce);
     padding: 3%;
 }
-.pageProduct h1{
+h1{
     font-family: 'Yellowtail', cursive;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
     width: 400px;
     height: 50px;

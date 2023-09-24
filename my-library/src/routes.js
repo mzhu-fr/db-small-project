@@ -6,6 +6,7 @@ import Product from './pages/product';
 import Home from './pages/home';
 import SignIn from './pages/signIn';
 import SignUp from './pages/signUp';
+import Panier from './pages/panier';
 import Error from './pages/error';
 
 export default function AppRouting() {
@@ -18,6 +19,7 @@ export default function AppRouting() {
                 <Route path="/product" element={<Product />} />
                 <Route path="/signin" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
+                <Route path="/panier" element={<Panier />}/>
                 <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
