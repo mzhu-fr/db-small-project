@@ -4,6 +4,7 @@ import Image13 from "../image/livre13.jpg";
 import Image14 from "../image/livre14.jpg";
 import Image15 from "../image/livre15.jpg";
 import Image16 from "../image/livre16.jpg";
+import Image17 from "../image/chat.jpg";
 // Composant de la page produits pour les grids by mohamed.B
 function categorie4(props) {
     return (
@@ -52,6 +53,18 @@ function categorie4(props) {
                         text="Psychologie Obscure"
                         text2="Ryan Andrews"
                         text3="19,97€"
+                    />
+                </div>
+            </div>
+
+            <div className="grid-item">
+                <div className="card">
+                    <img src={Image17} alt="livre17" />
+                    <Book
+                        cName="name"
+                        text="Psychologie Obscure"
+                        text2="Mohammed Hamdane"
+                        text3="21,90€"
                     />
                 </div>
             </div>
