@@ -1,24 +1,28 @@
-*{ 
+* {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
-.pagePanier{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--vert-fonce);
-    padding: 3%;
+
+.pagePanier {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--vert-fonce);
+  padding: 3%;
 }
+
 .contenuePanier {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .contenue {
   border: 1px solid red;
   margin-right: 50px;
   padding-bottom: 20px;
 }
+
 .containerPanier {
   display: flex;
   flex-direction: row;
@@ -29,4 +33,24 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 2px solid black;
+}
+
+.contenant-image {
+  height: auto;
+  width: 150px;
+  display: flex;
+}
+
+.contenant-image>img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contenant-texte {
+  color: red;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

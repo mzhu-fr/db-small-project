@@ -1,5 +1,5 @@
 import React from 'react'
-import Book from '../component/book'
+import Book from '../composants/book'
 import '../styles/error.css'
 
 function error() {

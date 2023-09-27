@@ -28,39 +28,39 @@ class signIn extends Component {
   render() {
     return (
 
-        <div className="pageSignIn">
-          <div className="container">
-        <h2>Connexion</h2>
-        <form onSubmit={this.handleSubmit} id="login-form">
-          <label>
-            Nom d'utilisateur:
-            <input
-              type="text"
-              name="username"
-              id="username"
-              value={this.state.username}
-              onChange={this.handleChange}
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Mot de passe:
-            <input
-              type="password"
-              name="password"
-              id="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-              required
-            />
-          </label>
-          <br />
-          <button type="submit">Se Connecter</button>
-        </form>
-        {this.state.error && <p className="error">{this.state.error}</p>}
+      <div className="pageSignIn">
+        <div className="container">
+          <h2>Connexion</h2>
+          <form onSubmit={this.handleSubmit} id="login-form">
+            <label>
+              Nom d'utilisateur:
+              <input
+                type="text"
+                name="username"
+                id="username"
+                value={this.state.username}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+            <br />
+            <label>
+              Mot de passe:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                value={this.state.password}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+            <br />
+            <button type="submit">Se Connecter</button>
+          </form>
+          {this.state.error && <p className="error">{this.state.error}</p>}
+        </div>
       </div>
-</div>
     );
   }
 }

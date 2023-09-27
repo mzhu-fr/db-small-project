@@ -1,11 +1,21 @@
 .logo-book {
     font-size: 2.5em;
     color: var(--noir);
+    display: flex;
+    font-family: 'Yellowtail';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .burger-menu {
     font-size: 2.5em;
     display: none;
+}
+
+.navbar-links .panier:hover {
+    color: white;
+    /* background-color: black; */
 }
 
 .navbar {
@@ -34,25 +44,20 @@
     z-index: 5;
     width: 100vw;
     height: 100vh;
-
     text-align: center;
     justify-content: center;
     text-align: center;
-
     display: flex;
     flex-direction: column;
 }
 
 .sidebar-close {
     display: flex;
-
     justify-content: center;
     text-align: center;
     align-items: center;
-
     font-size: 2.5em;
 }
-
 
 .sidebar-links-list {
     display: flex;

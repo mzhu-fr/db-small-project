@@ -48,7 +48,7 @@ code {
   --noir: #010101;
   --blanc: #faf9f9;
   --rouge: #e04b5a;
-
+  --bleu-theme: #70a1ff;
   /* COULEUR OPACITE */
   --vert-fonce-opacite: rgba(14, 149, 119, 0.5);
   --vert-clair-opacite: rgba(4, 22, 173, 0.5);
