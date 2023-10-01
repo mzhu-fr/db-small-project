@@ -4,11 +4,11 @@ import Sidebar from '../composants/sidebar'
 import Navbar from '../composants/navbar';
 import Product from '../pages/product';
 import Home from '../pages/home';
-// import SignIn from './pages/signIn';
 import Log from '../pages/login';
-import SignUp from '../pages/signUp';
 import Panier from '../pages/panier';
 import Error from '../pages/error';
+import Footer from '../composants/footer'
+import { PageAdmin } from './routes-auth';
 
 export default function AppRouting() {
     return (
@@ -16,13 +16,25 @@ export default function AppRouting() {
             <Navbar />
             <Sidebar />
             <Routes>
-                <Route path="/home" element={<Home />} />
+
+                {/* S'affichera que l'utilisateur soit connecté ou non */}
+                <Route path={"/" || "/home"} element={<Home />} />
                 <Route path="/product" element={<Product />} />
+
+                {/* Ne s'affichera plus si l'utilisateur est connecté */}
                 <Route path="/signin" element={<Log />} />
-                <Route path="/signup" element={<SignUp />} />
+
+
                 <Route path="/panier" element={<Panier />} />
+
+                {/* Ne s'affichera que si le role est admin */}
+                <Route path="/admin/:id" element={<PageAdmin />}>
+                    <Route path="/admin/:id/gestion-livres" />
+                </Route>
+
                 <Route path="*" element={<Error />} />
             </Routes>
+            {/* <Footer /> */}
         </BrowserRouter>
     )
 }

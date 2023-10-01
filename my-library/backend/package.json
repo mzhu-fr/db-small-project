@@ -22,5 +22,12 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.6.1",
     "nodemon": "^3.0.1"
+  },
+  "wallaby": {
+    "env": {
+      "params": {
+        "runner": "--experimental-vm-modules"
+      }
+    }
   }
 }

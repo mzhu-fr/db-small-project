@@ -4,6 +4,7 @@ import '../styles/styleLogin.css';
 
 import axios from 'axios';
 import { AuthContext } from "../context/authContext";
+import { useNavigate } from "react-router-dom";
 
 class Log extends React.Component {
 
@@ -60,6 +61,8 @@ function LoginBox() {
     const [messageErreur, setMessageErreur] = useState(null)
     // console.log(inputs);
 
+    const navigate = useNavigate();
+
     const { login } = useContext(AuthContext);
     const handleChange = e => {
         setInputs(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -71,7 +74,7 @@ function LoginBox() {
             // const res = await axios.post("/auth/login", inputs)
             // console.log(res);
             await login(inputs);
-            console.log("TU ES CONNECTE WAOUW")
+            navigate("/admin/:id")
         }
         catch (err) {
             setMessageErreur(err.response.data)
@@ -127,7 +130,7 @@ function RegisterBox() {
     const handleSubmit = async e => {
         e.preventDefault();
         try {
-            const res = await axios.post("/auth/register", inputs)
+            const res = await axios.post("/auth", inputs)
             console.log(res);
         }
         catch (err) {

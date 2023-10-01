@@ -4,12 +4,14 @@ import jwt from 'jsonwebtoken'
 
 export const register = (req, res) => {
 
-    res.json("REGISTER PAGE");
+    // res.json("REGISTER PAGE");
     // Check si l'utilisateur existe
     const query = "SELECT * FROM user WHERE email = ? OR username = ?";
     db.query(query, [req.body.email, req.body.username], (err, data) => {
-        if (err) return res.json(err);
-        if (data.length) return res.status(409).json("L'utilisateur existe déjà.");
+        if (err) return res.status(409).json(err);
+        if (data.length > 0) {
+            return res.status(409).json("L'utilisateur existe déjà.")
+        };
 
         // Mot de passe crypté et créer l'utilisateur
         const salt = bcrypt.genSaltSync(10);
@@ -17,6 +19,10 @@ export const register = (req, res) => {
 
         const q = "INSERT INTO user(`username`, `email`, `password`, `prenom`, `nom`, `adresse`, `codepost`) VALUES (?)"
 
+
+        // req = request (requiert)
+        // body = viens du body (html)
+        // le formulaire a "name = ****" qui donne donc les infos à récup
         const values = [
             req.body.username,
             req.body.email,
@@ -30,7 +36,7 @@ export const register = (req, res) => {
         db.query(q, [values], (err, data) => {
             console.log("hello");
             if (err) return res.json(err);
-            if (data.length) return res.status(200).json("Utilisateur bien enregistré ! ");
+            return res.status(200).json("Utilisateur bien enregistré ! ");
 
         })
 

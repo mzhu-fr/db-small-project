@@ -8,14 +8,14 @@ export const AuthContextProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
 
     const login = async (inputs) => {
-        const res = await axios.post("/auth/login", inputs);
+        const res = await axios.post("/login", inputs);
         setCurrentUser(res.data)
     }
 
     const logout = async (inputs) => {
-        const res = await axios.post("/auth/logout");
+        const res = await axios.post("/logout");
         setCurrentUser(null)
-        console.log("Bien déconnecté");
+        console.log(res.data);
     }
 
     useEffect(() => {
