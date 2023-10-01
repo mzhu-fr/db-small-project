@@ -134,7 +134,7 @@ h1 {
 } */
 
 /* grid product responsive */
-.grid-container {
+/* .grid-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -142,8 +142,21 @@ h1 {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 20px; */
+    padding: 20px; 
+}*/
+
+.grille {
+    max-width: 1400px;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
 }
+
 
 .panel {
     display: flex;
@@ -151,9 +164,11 @@ h1 {
 }
 
 .grid-item {
-    flex: 0 0 calc(15% - 20px);
-    /*flex: 0 0 calc(33.333% - 20px);     IMPORTANT*/
-    margin: 6px;
+    /* flex: 0 0 calc(15% - 20px); */
+    /* flex: 0 0 calc(24.0% - 20px); */
+    /*     IMPORTANT*/
+    width: 250px;
+    height: auto;
 }
 
 .card {

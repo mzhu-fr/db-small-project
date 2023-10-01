@@ -1,21 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.pageHome{
+
+.pageHome {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre verticalement */
-    align-items: center; /* Centre horizontalement */
+    justify-content: center;
+    /* Centre verticalement */
+    align-items: center;
+    /* Centre horizontalement */
     background-color: var(--bleu-clair);
 }
-.pageHome h1{
+
+.pageHome h1 {
     font-family: 'Yellowtail', cursive;
     font-size: 2.5em;
-    text-align: center;/* Centre le texte horizontalement */
-    width: 400px;
-    height: 50px;
+    text-align: center;
+    /* Centre le texte horizontalement */
     border: 1px solid red;
+}
+
+.titre-admin {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }

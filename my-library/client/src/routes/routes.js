@@ -9,6 +9,7 @@ import Panier from '../pages/panier';
 import Error from '../pages/error';
 import Footer from '../composants/footer'
 import { PageAdmin } from './routes-auth';
+import { Update } from '../pages/admin/update';
 
 export default function AppRouting() {
     return (
@@ -18,7 +19,7 @@ export default function AppRouting() {
             <Routes>
 
                 {/* S'affichera que l'utilisateur soit connecté ou non */}
-                <Route path={"/" || "/home"} element={<Home />} />
+                <Route path={"/" && "/home"} element={<Home />} />
                 <Route path="/product" element={<Product />} />
 
                 {/* Ne s'affichera plus si l'utilisateur est connecté */}
@@ -28,8 +29,9 @@ export default function AppRouting() {
                 <Route path="/panier" element={<Panier />} />
 
                 {/* Ne s'affichera que si le role est admin */}
-                <Route path="/admin/:id" element={<PageAdmin />}>
-                    <Route path="/admin/:id/gestion-livres" />
+                <Route path="/admin" >
+                    <Route path="/admin/gestion" element={<PageAdmin />} />
+                    <Route path="/admin/update/:id" element={< Update />} />
                 </Route>
 
                 <Route path="*" element={<Error />} />

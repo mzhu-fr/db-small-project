@@ -6,6 +6,7 @@ function error() {
   return (
     <>
       <div className='errorPage'>
+        <h3>~ ERROR ~</h3>
         <Book
           cName="Erreur"
           text="Page Erreur"

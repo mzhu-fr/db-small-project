@@ -74,7 +74,7 @@ function LoginBox() {
             // const res = await axios.post("/auth/login", inputs)
             // console.log(res);
             await login(inputs);
-            navigate("/admin/:id")
+            navigate("/admin/gestion")
         }
         catch (err) {
             setMessageErreur(err.response.data)

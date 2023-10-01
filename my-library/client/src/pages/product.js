@@ -37,19 +37,20 @@ export default function Product() {
 
           <div className="grid-container">
             {(filtre === "Fantastique" || filtre === "all") && <div className="panel" id="one-panel">
-              <div className="panel-title">Fantastique</div>
+              <div className="panel-title"><h2>Fantastique</h2></div>
               <Fantastique />
             </div>}
+
             {(filtre === "Jeunesse" || filtre === "all") && <div className="panel" id="one-panel">
-              <div className="panel-title">Jeunesse</div>
+              <div className="panel-title"><h2>Jeunesse:</h2></div>
               <Jeunesse />
             </div>}
             {(filtre === "Roman" || filtre === "all") && <div className="panel" id="one-panel">
-              <div className="panel-title">Roman</div>
+              <div className="panel-title"><h2>Roman :</h2></div>
               <Roman />
             </div>}
             {(filtre === "Divers" || filtre === "all") && <div className="panel" id="one-panel">
-              <div className="panel-title">Divers</div>
+              <div className="panel-title"><h2>Divers:</h2></div>
               <Divers />
             </div>}
 
@@ -91,7 +92,7 @@ export default function Product() {
             <Card /><Card /><Card /><Card /> */}
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }

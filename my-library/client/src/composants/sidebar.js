@@ -44,7 +44,7 @@ export default function Sidebar() {
 
                 <Link className="sidebar-link" to="/product" onClick={() => handleClick()}>< VscLibrary /> Les livres</Link>
 
-                {currentUser && currentUser.role === "admin" ? <Link className="sidebar-link" to="/admin/:id" onClick={() => handleClick()}><AiFillSetting />Gérer les livres</Link> : ""}
+                {currentUser && currentUser.role === "admin" ? <Link className="sidebar-link" to="/admin/gestion" onClick={() => handleClick()}><AiFillSetting />Gérer les livres</Link> : ""}
 
                 {currentUser ?
                     <Link className="sidebar-link" onClick={() => handleLogout()}> <RiLogoutCircleRFill /> Se déconnecter</Link>

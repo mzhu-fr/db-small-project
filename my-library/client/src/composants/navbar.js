@@ -16,6 +16,7 @@ import { TbSquareLetterM, TbSquareLetterO, TbSquareLetterE } from 'react-icons/t
 import { VscLibrary } from 'react-icons/vsc';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiLogoutCircleRFill } from 'react-icons/ri';
+import { AiFillSetting } from 'react-icons/ai';
 
 export default function Navbar() {
 
@@ -43,6 +44,9 @@ export default function Navbar() {
                 <div className="navbar-content">
 
                     <Link className="navbar-links" to="/product"><VscLibrary /></Link>
+
+                    {currentUser && currentUser.role === "admin" ? <Link className="navbar-links" to="/admin/gestion"><AiFillSetting /></Link> : ""}
+
                     {currentUser ?
                         (<span className="navbar-links" onClick={handleLogout}> < RiLogoutCircleRFill /></span>)
                         : (<Link className="navbar-links" to="/signin"><FaUser /></Link>)}
@@ -53,6 +57,6 @@ export default function Navbar() {
                 <div onClick={() => handleClick()} className="burger-menu"><GiHamburgerMenu /></div>
 
             </div>
-        </div>
+        </div >
     )
 }

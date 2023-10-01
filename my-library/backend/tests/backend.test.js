@@ -1,9 +1,9 @@
 import jest from "jest";
-import { createBackendServer, db } from "../backend";
+import { createBackendServer, db } from "../db.js";
 import getPort from "get-port";
 import axios from "axios";
 // require("jest");
-// var backend = require("../backend.js");
+// var backend = require("../db.js");
 
 describe("Backend Server", () => {
     let port = 8800;
@@ -29,7 +29,7 @@ describe("Backend Server", () => {
         }
 
         try {
-            const response = await axios.post(`http://localhost:${port}/api/authenticate`, data)
+            const response = await axios.post(`http://localhost:${port}/api/auth`, data)
         }
         catch (err) {
             console.log(err);
@@ -53,7 +53,7 @@ describe("Backend Server", () => {
 
         // call localhost 8800 "api/authenticate"
         try {
-            const res = await axios.post(`http://localhost:${port}/api/authenticate`, data)
+            const res = await axios.post(`http://localhost:${port}/api/auth`, data)
             expect(res.status).toEqual(200);
         }
         catch (error) {
