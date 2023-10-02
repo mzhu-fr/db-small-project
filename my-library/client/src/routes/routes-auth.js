@@ -7,13 +7,13 @@ import { Admin } from "../pages/admin/admin";
 export const PageAdmin = () => {
     const { currentUser } = useContext(AuthContext);
 
-    // if (currentUser && currentUser.role === 'admin') {
-    //     return (
-    //         <>
-    //             <Admin />
-    //         </>
-    //     )
-    // }
-    // return <Navigate to="/" />
-    return (<Admin />)
+    if (currentUser && currentUser.role === 'admin') {
+        return (
+            <>
+                <Admin />
+            </>
+        )
+    }
+    return <Navigate to="/" />
+    // return (<Admin />)
 }
