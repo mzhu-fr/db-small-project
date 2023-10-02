@@ -17,6 +17,8 @@
 }
 
 .box-controller {
+    border: 2px solid red ;
+    height: 100%;
     visibility: 1s ease-out;
     display: -webkit-box;
     display: -ms-flexbox;
