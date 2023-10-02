@@ -19,7 +19,7 @@ function Panier() {
     <>
       <div className="pagePanier">
         <div className="containerPanier">
-          <div className="panier1">
+          {/* <div className="panier1">
             <div className="contenant-image">
               <img src="https://i.imgur.com/2DsA49b.webp"
                 // className="img-fluid rounded-3"
@@ -27,9 +27,9 @@ function Panier() {
                 alt="Book"
               /></div>
             <div className="titre+text+blablabla"></div>
-          </div>
+          </div> */}
 
-          <div className="panier1">
+          {/* <div className="panier1">
             <div className="contenant-image"><img
               src='https://lisez2.cdnstatics.com/usuaris/libros/fotos/9782412092/m_libros/9782412091128ORI.jpg'
               // src="https://i.imgur.com/Oj1iQUX.webp"
@@ -38,8 +38,11 @@ function Panier() {
               alt="Book"
             /></div>
             <div className="titre+text+blablabla"></div>
-          </div>
-          {/* <section>
+          </div> */}
+
+{/* ---- ---- */}
+
+          <section>
             <div className='contenuePanier'>
               <div className='contenue'>
                 <img
@@ -112,12 +115,13 @@ function Panier() {
               <div className='contenue'>
                 <p style={{ fontWeight: 500 }}>
                   Prix:
-                </p>${Prix}</div>
+                </p>${Prix}8.99</div>
 
             </div>
             <button className="payment-button" onClick={handlePayment}>Payer</button>
+          </section>
 
-          </section> */}
+          {/* ---- ---- */}
         </div>
       </div >
     </>
