@@ -6,6 +6,8 @@ export const register = (req, res) => {
 
     // res.json("REGISTER PAGE");
     // Check si l'utilisateur existe
+
+
     const query = "SELECT * FROM user WHERE email = ? OR username = ?";
     db.query(query, [req.body.email, req.body.username], (err, data) => {
         if (err) return res.status(409).json(err);

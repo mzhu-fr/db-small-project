@@ -6,7 +6,7 @@ import axios from "axios";
 // var backend = require("../db.js");
 
 describe("Backend Server", () => {
-    let port = 8800;
+    let port = 6800;
 
     beforeAll(async () => {
         port = await getPort();
