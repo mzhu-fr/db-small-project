@@ -19,7 +19,8 @@ export default function AppRouting() {
             <Routes>
 
                 {/* S'affichera que l'utilisateur soit connecté ou non */}
-                <Route path={"/" && "/home"} element={<Home />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/product" element={<Product />} />
 
                 {/* Ne s'affichera plus si l'utilisateur est connecté */}

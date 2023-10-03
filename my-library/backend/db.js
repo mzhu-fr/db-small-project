@@ -13,6 +13,14 @@ export const db = mysql.createConnection({
     database: "books"
 })
 
+db.connect(function (err) {
+    if (err) {
+        return console.error('error: ' + err.message);
+    }
+
+    console.log('Connected to the MySQL server.');
+});
+
 export function createBackendServer(port) {
 
     const app = express();
@@ -46,5 +54,9 @@ export function createBackendServer(port) {
 
     app.listen(port, () => {
         console.log('backend is at port : ' + port);
+    })
+
+    app.get("/api", (req, res) => {
+        res.json("tu fonctionnes pas ??");
     })
 }
